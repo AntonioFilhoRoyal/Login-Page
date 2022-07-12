@@ -1,0 +1,215 @@
+:root{
+    --title:#D53C3C;
+    --text:#A3445D;
+    --header:#0D050E;
+    --main:#2B193E;
+    --btn:#8D2D56;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.header-bg{
+    width: 100%;
+    min-width: 300px;
+    min-height: 10vh;
+
+    background-color: var(--header);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+
+.header-bg a{
+    color: var(--title);
+}
+
+.main-content{
+    width: 100%;
+    min-height: 90vh;
+    background-color: var(--main);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bg{
+    padding: 2% 2%;
+    max-width: 1220px;
+    min-width: 400px;
+    min-height: 300px;
+    background-color: var(--header);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 2px 5px 0.2px rgb(116, 116, 116);
+}
+
+.form-content{
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--text);
+
+}
+
+.wapper-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wapper-password{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wapper-password div{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.wapper-password div i{
+    margin-bottom: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.wapper-password .fa-eye{
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+.wapper-password .fa-eye-slash{
+    padding-top: 5px;
+    display: none;
+    text-align: center;
+}
+
+
+.wapper-link{
+    margin-bottom: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 1.1rem;
+}
+
+.wapper-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.label-content{
+    text-align: center;
+}
+
+.input-area{
+    margin-bottom: 3%;
+    padding-left: 1%;
+    width: 100%;
+    height: 30px;
+
+    font-size: 18px;
+
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.input-name{
+
+    border-radius: 5px;
+
+}
+
+.input-area:focus{
+    box-shadow: inset 0px 0px 1px 0.5px red;
+}
+
+
+
+.wapper-link a{
+    color: var(--text);
+    transition: 0.3s ease-in-out;
+}
+
+.wapper-link a:hover{
+    color: #ff7096;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+
+    background-color: var(--btn);
+    font-size: 18px;
+    color: rgb(249, 249, 249);
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.309);
+    letter-spacing: 2px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 410px){
+
+    .main-bg{
+        padding: 4% 2%;
+        min-width: 300px;
+    }
+    
+    .form-content{
+        width: 95%;
+        font-size: 1.2rem;
+    
+    }
+
+    .wapper-link{
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+}
